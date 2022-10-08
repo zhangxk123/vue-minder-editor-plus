@@ -1,9 +1,9 @@
 import mindEditor from './components/minderEditor'
 import * as locale from "./locale";
 import PackageJSON from "../package.json"
-require('@7polo/kity/dist/kity.js');
+import 'kity'
+import 'kityminder-core'
 require('hotbox-minder/hotbox.js');
-require('@7polo/kityminder-core');
 require('./script/expose-editor.js');
 
 

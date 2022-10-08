@@ -4,6 +4,6 @@ npm-debug.log
 test/unit/coverage
 test/e2e/reports
 selenium-debug.log
-package-lock.json
+# package-lock.json
 /.idea/
 dist
