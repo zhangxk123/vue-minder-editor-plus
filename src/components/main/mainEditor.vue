@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import {editMenuProps, mainEditorProps, priorityProps} from "../../props";
+import {editMenuProps, mainEditorProps, priorityProps} from "../../props";
 import Navigator from "./navigator";
 import {markChangeNode} from "../../script/tool/utils";
 import Locale from '/src/mixins/locale';
@@ -141,7 +141,7 @@ export default {
   .save-btn {
     position: absolute;
     right: 30px;
-    bottom: 30px;
+    top: 30px;
   }
 
   .minder-container {

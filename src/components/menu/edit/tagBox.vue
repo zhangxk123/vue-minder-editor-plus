@@ -1,7 +1,7 @@
 <template>
 <div :disabled="commandDisabled">
     <el-tag v-for="(item, index) in tags"
-            :key="item"
+            :key="index"
             size="small"
             :color="getResourceColor(item)"
             @click="editResource(item)">{{item}}</el-tag>
