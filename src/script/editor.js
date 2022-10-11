@@ -17,11 +17,13 @@ define(function (require, exports, module) {
   function isEnable(editMenuProps, runtime) {
     switch (runtime.name) {
       case "PriorityRuntime":
-        return editMenuProps.sequenceEnable != true ? false : true;
+        return !!editMenuProps.sequenceEnable;
       case "TagRuntime":
-        return editMenuProps.tagEnable != true ? false : true;
+        return !!editMenuProps.tagEnable;
       case "ProgressRuntime":
-        return editMenuProps.progressEnable != true ? false : true;
+        return !!editMenuProps.progressEnable;
+      case "HistoryRuntime":
+        return !!editMenuProps.historyEnable;
       default:
         return true
     }

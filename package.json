@@ -1,6 +1,6 @@
 {
   "name": "vue-minder-editor-magic",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "基于vue2的脑图编辑组件",
   "author": "zhangxk123 <1771977110@qq.com>",
   "scripts": {

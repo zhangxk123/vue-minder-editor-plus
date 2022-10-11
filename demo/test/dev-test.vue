@@ -13,6 +13,7 @@
     <minder-editor
       :import-json="importJson"
       :progress-enable="true"
+      :history-enable="false"
       :tag-enable="true"
       :sequence-enable="true"
       :tags="tags"
@@ -27,7 +28,8 @@
       @afterMount="afterMount()"
       :default-mold="3"
       @moldChange="handleMoldChange"
-      @save="save"/>
+      @save="save"
+    />
   </div>
 </template>
 

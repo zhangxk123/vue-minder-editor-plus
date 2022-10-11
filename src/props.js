@@ -9,21 +9,9 @@ export let mainEditorProps = {
       return {
         "root": {
           "data": {
-            "text": "test111"
+            "text": "主题"
           },
-          "children": [
-            {
-              "data": {
-                  "text": "地图"
-              }
-            },
-            {
-              "data": {
-                "text": "百科",
-                "expandState":"collapse"
-              }
-            }
-          ]
+          "children": []
         },
         "template":"default"
       }
@@ -95,6 +83,10 @@ export let editMenuProps = {
     type: Boolean,
     default: true
   },
+  historyEnable: {
+    type: Boolean,
+    default: true
+  }
 }
 
 export let moleProps = {

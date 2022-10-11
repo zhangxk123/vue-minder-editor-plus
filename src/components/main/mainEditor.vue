@@ -17,11 +17,28 @@ export default {
     ...editMenuProps,
     ...mainEditorProps,
     ...priorityProps,
-    tags: Array
+    tags: Array,
   },
   data() {
     return {
-      minder: {}
+      minder: {},
+    }
+  },
+  computed: {
+    editMenuProps() {
+      let sequenceEnable = this.sequenceEnable;
+      let tagEnable = this.tagEnable;
+      let progressEnable = this.progressEnable;
+      let moveEnable = this.moveEnable;
+      let historyEnable = this.historyEnable;
+
+      return {
+        sequenceEnable,
+        tagEnable,
+        progressEnable,
+        moveEnable,
+        historyEnable
+      }
     }
   },
   mounted() {
@@ -55,20 +72,6 @@ export default {
     this.handlePriorityButton();
     this.handleTagButton();
     this.$emit('afterMount');
-  },
-  computed: {
-    editMenuProps() {
-      let sequenceEnable = this.sequenceEnable;
-      let tagEnable = this.tagEnable;
-      let progressEnable = this.progressEnable;
-      let moveEnable = this.moveEnable;
-      return {
-        sequenceEnable,
-        tagEnable,
-        progressEnable,
-        moveEnable
-      }
-    }
   },
   methods: {
     save() {

@@ -22,6 +22,7 @@
       :tag-enable="tagEnable"
       :move-enable="moveEnable"
       :progress-enable="progressEnable"
+      :history-enable="historyEnable"
       :import-json="importJson"
       :height="height"
       :tags="tags"
@@ -29,7 +30,8 @@
       :priority-prefix="priorityPrefix"
       :priority-start-with-zero="priorityStartWithZero"
       @afterMount="$emit('afterMount')"
-      @save="save"/>
+      @save="save"
+    />
   </div>
 </template>
 

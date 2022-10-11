@@ -203,6 +203,12 @@ default: true
 
 是否启用上移下移功能
 
+#### historyEnable
+type: Boolean <br>
+default: true
+
+是否启用撤回重做功能
+
 ### 优先级配置
 #### priorityCount <br>
 type Number <br>
